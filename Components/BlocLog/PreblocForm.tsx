@@ -14,12 +14,12 @@ export default function PreblocForm() {
         <div className="Prebloc">
             <h3>WELCOME TO JFN</h3>
             <div className='PreblocText'>
-                <Input id="Name" value={name} setValue={(e) => setName(e.target.value)} required={true}/>
+                <Input id="Name" value={name} setValue={(e) => setName(e.target.value)} nom="Name" type="text" couleur="black" required={true}/>
             </div>
             <div className='PreblocCheckbox'>
                 <label htmlFor="admin"><input type="checkbox" name="admin" id="admin" />avez vous un post administratif ?</label>
                 <label htmlFor="edut"><input type="checkbox" name="edut" id="edut" />avez vous un post etudiantif ?</label>
-                <label htmlFor="double"><input type="checkbox" name="double" id="double" />cummulez vous les deux ?</label>
+                {/* <label htmlFor="double"><input type="checkbox" name="double" id="double" />cummulez vous les deux ?</label> */}
             </div>
             <div className='PreblocButton'>
                 <span>Si c'est fait ? clique <button type="submit" onClick={GoToForm}>ici</button></span>

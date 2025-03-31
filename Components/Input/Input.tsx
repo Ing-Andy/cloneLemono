@@ -1,12 +1,12 @@
 import React from 'react'
 import './input.css'
 
-export default function Input({value,id,required,setValue}) {
+export default function Input({value,id,nom,required,setValue,type,couleur}) {
   return (
     <div className='Input'>
-        <label htmlFor={id}>{id}:</label>
+        <label htmlFor={id} style={{color:`${couleur}`}}> {nom} :</label>
         <input 
-            type="text" 
+            type={type}
             id={id}
             placeholder={`Enter your ${id} here...`}
             required={required}

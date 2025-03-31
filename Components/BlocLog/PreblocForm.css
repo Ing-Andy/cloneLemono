@@ -6,7 +6,7 @@
     height: 100vh;
 }
 .Prebloc{
-    box-shadow: 0px 0px 5px 0px rgba(0,0, 0, 0.5),0px 0px 10px 0px rgba(0,0, 0, 0.7),0px 0px 15px 0px rgba(0,0, 0, 0.9);
+    box-shadow: 0px 0px 5px 0px rgba(200, 155, 0, 1),0px 0px 10px 0px rgba(200, 155, 0, .8),0px 0px 15px 0px rgba(200, 155, 0, .6);
     background-color: #ffffff;
     width: 350px;
     height: 220px;

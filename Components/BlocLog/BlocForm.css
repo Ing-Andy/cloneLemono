@@ -1,0 +1,61 @@
+.BlocForm{
+    width: 35%;
+    height: 500px;
+    border-radius: 7px;
+    color: #000000;
+    /* background: #ffffff; */
+    background-color: rgba(100, 18, 18,1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(200, 155, 0, 1),0px 0px 10px 0px rgba(200, 155, 0, .8),0px 0px 15px 0px rgba(200, 155, 0, .6);
+}
+.BlocForm h4{
+    color: rgba(200, 155, 0, 1);
+    text-transform: uppercase;
+    text-align: center  ;
+}
+.Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.DivInput{
+    padding:auto 0px;
+    width: 100%;
+}
+.DivSelect{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0px;
+}
+.DivSelect select{
+    outline: none;
+    text-align: center;
+    height: 30px;
+    width: 45%;
+    margin-top: 10px;
+}
+.Form button{
+    height: 30px;
+    width: 40%;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
+    transition: color .5s ease-in-out, background-color .5s ease-in-out, box-shadow .5s ease-in-out;  
+}
+.Form button:hover{
+    background-color: rgba(200, 155, 0, 1);
+    color: rgba(100, 18, 18,1);
+    box-shadow: 0px 0px 5px 0px rgba(200, 155, 0, 1),0px 0px 5px 0px rgba(200, 155, 0, .8);
+}
+.pend{
+    padding-top: 10px;
+    color: rgba(200, 155, 0, 1);
+}
