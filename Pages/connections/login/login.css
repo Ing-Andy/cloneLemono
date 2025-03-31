@@ -1,0 +1,10 @@
+.containerLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    /* border: 1px solid #000; */
+    /* background-color: white; */
+}
