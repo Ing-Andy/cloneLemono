@@ -8,3 +8,6 @@
     /* border: 1px solid #000; */
     /* background-color: white; */
 }
+.LoginYes{
+    transition: justify-content .5s ease-in-out;
+}

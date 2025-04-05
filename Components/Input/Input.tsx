@@ -1,7 +1,7 @@
 import React from 'react'
 import './input.css'
 
-export default function Input({value,id,nom,required,setValue,type,couleur}) {
+export default function Input({value,id,nom,required,setValue,type,couleur,disable}) {
   return (
     <div className='Input'>
         <label htmlFor={id} style={{color:`${couleur}`}}> {nom} :</label>
@@ -12,6 +12,7 @@ export default function Input({value,id,nom,required,setValue,type,couleur}) {
             required={required}
             value={value}
             onChange={setValue}
+            disabled={disable}
         />
     </div>
   )
