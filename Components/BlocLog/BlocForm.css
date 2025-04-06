@@ -80,4 +80,7 @@
 .Form select{
     color: rgba(200, 155, 0, 1);
     background-color: rgba(100, 18, 18,1);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0px rgba(200, 155, 0, 1);
 }
