@@ -1,19 +1,15 @@
 import React from 'react'
 import './Dashbord.css'
 import Aside from '../../Components/Aside/AsideDashbord'
-import { Route, Routes } from 'react-router-dom'
-import AdminPage from '../Admin/AdminPage'
 
-export default function Dashbord() {
+export default function Dashbord({children}) {
   return (
     <div className='containerDashbord'>
         <aside className='AsideDashbord'>
             <Aside />
         </aside>
         <div className="containerApp">
-            <Routes>
-                <Route path='/administration' element={<AdminPage />} index/>
-            </Routes>
+            {children}
         </div>
     </div>
   )

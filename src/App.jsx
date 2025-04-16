@@ -1,18 +1,20 @@
-import React from 'react'
 import './App.css'
-import { BrowserRouter,Routes, Route } from 'react-router-dom'
-import Prebloc from '../Components/BlocLog/PreblocForm'
-import BlocForm from '../Components/BlocLog/BlocForm'
-import Login from '../Pages/connections/login/Login'
+import React from 'react'
+import AdminPage from '../Pages/Admin/AdminPage'
 import Dashbord from '../Pages/dashbord/Dashbord'
+import Login from '../Pages/connections/login/Login'
+import { BrowserRouter,Routes, Route, NavLink } from 'react-router-dom'
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path="/" element={<Prebloc />} /> */}
-        {/* <Route path="/" element={<Login />} /> */}
-        <Route path="/" element={<Dashbord />} />
+        <Route path='/' element={<NavLink to='/login'/>} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/' element={<Dashbord />}>
+          <Route path='administration' element={<AdminPage />} />
+          <Route path='/' element={<NavLink to='/administration' />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )

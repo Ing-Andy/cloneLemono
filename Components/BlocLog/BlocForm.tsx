@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import './BlocForm.css'
 import Input from '../Input/Input'
+import { useNavigate } from 'react-router-dom'
 
 const BlocForm: React.FC<{Role: string}> = ({Role}) => {
+    const navigate = useNavigate();
     const [name, setName] = useState<string>('');
     const [surName, setSurName] = useState<string>('');
     const [email, setEmail] = useState<string>('');
@@ -12,11 +14,14 @@ const BlocForm: React.FC<{Role: string}> = ({Role}) => {
     const handleForm = (): void => {
         setIsForConnect(!isForConnect)
     }
+    const Submit = () => {
+        navigate(`/${Role}`)
+    }
     return (
         <div className='BlocFormContainer'>
             <div className='BlocForm'>
                 <h4>Entrer vos donnez pour vous {isForConnect == false ? "enregistrer" : "connecter"}</h4>
-                <form action="" className='Form' method='post'>
+                <form className='Form' onSubmit={Submit} >
                     <div className="DivInput">
                         <Input value={name} setValue={(e) => setName(e.target.value)} type="text" id={name} nom="Name" required={true} disable={false} couleur="rgba(200, 155, 0, 1)"  />
                         <Input value={surName} setValue={(e) => setSurName(e.target.value)} type="text" id={surName} nom="Surname" required={true} disable={false} couleur="rgba(200, 155, 0, 1)"  />
